@@ -307,7 +307,91 @@
                       <p><b>On this page:</b> a rough illustration, not a simulation. The edge is level with the horizon up
                         to 100 TeV, then rises 20° for every factor of 10 in energy, to match the published band at 1 PeV:</p>
                       <p class="sx-eq"><span><i>α</i><sub>up</sub> = 10° + 20° × log<sub>10</sub>(<i>E</i> / 1 PeV)</span><small>kept between 0° and 45°. Now: <i>E</i> = <b class="sx-live" data-math="E"></b>, <i>α</i><sub>up</sub> = <b class="sx-live" data-math="up"></b></small></p>
-                    
+                    </div>
+                  </section>
+
+                  <section class="fx-card low">
+                    <header><span class="fx-icon" aria-hidden="true">↓</span><div><h4>The lower edge</h4><p>A wall of rock that stops neutrinos</p></div></header>
+                    <ol class="fx-steps">
+                      <li><p><b>Only neutrinos cross the Earth,</b> so tracks coming up from below are clean.</p></li>
+                      <li><p><b>But energetic neutrinos get stopped.</b> The chance of hitting something grows with energy.
+                        The fraction that gets through a column of matter <i>X</i>:</p>
+                        <p class="sx-eq"><span><i>P</i> = e<sup>−<i>X</i> / <i>λ</i></sup>, &nbsp; <i>λ</i> = 1 / (<i>σ</i>(<i>E</i>) <i>N</i><sub>A</sub> <i>ρ</i>)</span><small><i>λ</i>: interaction length; <i>σ</i>: the neutrino’s size as a target, growing about as <i>E</i><sup>0.36</sup> above 10 TeV; <i>N</i><sub>A</sub>: Avogadro’s number; <i>ρ</i>: density</small></p></li>
+                      <li><p><b>The deeper below the horizon, the more Earth.</b> At an angle <i>δ</i> below it, a neutrino
+                        crosses a chord of the Earth (radius <i>R</i><sub>⊕</sub> = 6,371 km):</p>
+                        <p class="sx-eq"><span><i>s</i> = 2 <i>R</i><sub>⊕</sub> sin <i>δ</i></span><small>a few hundred km just below the horizon, 12,742 km straight through</small></p></li>
+                    </ol>
+                    <div class="fx-model">
+                      <p><b>On this page:</b> a uniform Earth, with the interaction length <i>L</i> (in Earth radii) set by
+                        two round figures: straight through, fewer than 20% get across at 100 TeV and 5% at 1 PeV. So
+                        <i>L</i> = 2 / ln 5 ≈ 1.24 and 2 / ln 20 ≈ 0.67, joined by a power law:</p>
+                      <p class="sx-eq"><span><i>L</i>(<i>E</i>) = 1.24 × (<i>E</i> / 100 TeV)<sup>−0.27</sup></span><small>Now: <i>L</i> = <b class="sx-live" data-math="L"></b> Earth radii</small></p>
+                      <p>The edge is where half the neutrinos still get through, e<sup>−<i>s</i>/<i>L</i></sup> = ½:</p>
+                      <p class="sx-eq"><span><i>δ</i><sub>low</sub> = arcsin(<i>L</i> ln 2 / 2)</span><small>Now: <i>δ</i><sub>low</sub> = <b class="sx-live" data-math="low"></b> below the horizon</small></p>
+                    </div>
+                  </section>
+                </div>
+
+                <p class="fx-caveat">Both edges are illustrations, not P-ONE’s measured sensitivity: the model leaves out the
+                  Earth’s dense core, neutrinos that scatter but carry on with less energy, and the telescope’s own
+                  efficiency.</p>
+
+                <div class="sx-sources">
+                  <p class="ef-legend">Sources of information</p>
+                  <ol>
+                    <li><b>The published bands:</b> L. Schumacher et al., “PLEνM: A global and distributed monitoring system
+                      of high-energy astrophysical neutrinos”, Proc. 37th ICRC, PoS(ICRC2021)1185,
+                      <a href="https://arxiv.org/abs/2107.13534" rel="noopener">arXiv:2107.13534</a>.</li>
+                    <li><b>Neutrino cross-sections:</b> A. Connolly, R. S. Thorne and D. Waters, Phys. Rev. D 83, 113009
+                      (2011), <a href="https://arxiv.org/abs/1102.0691" rel="noopener">arXiv:1102.0691</a>; R. Gandhi,
+                      C. Quigg, M. H. Reno and I. Sarcevic, Phys. Rev. D 58, 093009 (1998),
+                      <a href="https://arxiv.org/abs/hep-ph/9807264" rel="noopener">arXiv:hep-ph/9807264</a>.</li>
+                    <li><b>The Earth’s absorption, measured:</b> IceCube Collaboration, “Measurement of the multi-TeV
+                      neutrino interaction cross-section with IceCube using Earth absorption”, Nature 551, 596 (2017),
+                      <a href="https://arxiv.org/abs/1711.08119" rel="noopener">arXiv:1711.08119</a>.</li>
+                    <li><b>The Earth’s density:</b> A. M. Dziewonski and D. L. Anderson, “Preliminary reference Earth
+                      model”, Phys. Earth Planet. Inter. 25, 297 (1981).</li>
+                    <li><b>Muon energy loss and range:</b> D. E. Groom, N. V. Mokhov and S. I. Striganov, “Muon stopping
+                      power and range tables”, Atomic Data and Nuclear Data Tables 78, 183 (2001); Particle Data Group,
+                      “Passage of particles through matter”, <a href="https://pdg.lbl.gov/" rel="noopener">pdg.lbl.gov</a>.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </details>
+          <details class="sx-drawer">
+            <summary><span class="sx-drawer-icon" aria-hidden="true"></span><span><b>How the figure is drawn</b><small>What is to scale, the published band, and the turning Earth</small></span></summary>
+            <div class="sx-drawer-body">
+              <ul class="fx-notes">
+                <li><h4><span class="fx-note-icon" aria-hidden="true">⤢</span>Not to scale</h4><p>The cones and the horizon disk are drawn large, so they can be seen. The Earth is drawn small beside the sky.</p></li>
+                <li><h4><span class="fx-note-icon" aria-hidden="true">↕</span>The band at one energy</h4><p>Its lower edge is where half the neutrinos still get through the Earth; its upper edge is a rough model of the muons. Both are illustrations, not P-ONE’s measured sensitivity. The equations are under “Why the band sits near the horizon”.</p></li>
+                <li><h4><span class="fx-note-icon" aria-hidden="true">≋</span>The published band</h4><p>Where each telescope is best at discovering a source whose neutrinos span many energies (a spectrum falling as E<sup>−2</sup>). At its edges, the chance of a discovery halves. At about 1 PeV, the single-energy band matches it. After L. Schumacher et al.</p></li>
+                <li><h4><span class="fx-note-icon dashed" aria-hidden="true"></span>Planned telescopes</h4><p>Dashed rings are telescopes planned or proposed. Their sites are approximate.</p></li>
+                <li><h4><span class="fx-note-icon" aria-hidden="true">◎</span>The see-through sky</h4><p>The sky is so far away that the whole Earth is a point beside it. So each band’s directions are carried out from the Earth’s centre: the dashed rays.</p></li>
+                <li><h4><span class="fx-note-icon" aria-hidden="true">↻</span>The turning Earth</h4><p>The Earth turns once round its axis (the dashed line through the poles) in a sidereal day, 23 h 56 m: the time the stars take to come back to the same place. IceCube sits on the axis, so its ring never moves.</p></li>
+                <li><h4><span class="fx-note-icon" aria-hidden="true">✦</span>The two sources</h4><p>The blazar TXS 0506+056 was the first source of neutrinos found in the sky, by IceCube. The nearby galaxy NGC 1068 followed.</p></li>
+                <li><h4><span class="fx-note-icon" aria-hidden="true">∅</span>Not shown</h4><p>Neutrinos made in our own atmosphere. They arrive from every direction and are the main background at low energies.</p></li>
+              </ul>
+              <p class="fx-credit">Coastlines from <a href="https://github.com/topojson/world-atlas" rel="noopener">Natural Earth</a>.</p>
+            </div>
+          </details>
+          <details class="sx-drawer">
+            <summary><span class="sx-drawer-icon" aria-hidden="true"></span><span><b>Where the data comes from</b><small>The neutrinos, stars, Milky Way and constellations</small></span></summary>
+            <div class="sx-drawer-body">
+              <p class="fx-lede">The sky in the figure is real. Switch each part on under <em>On the sky</em>.</p>
+              <ul class="fx-notes fx-data">
+                <li><h4>IceCube’s neutrinos</h4><p>Each ring is one of the 340 high-energy neutrinos in IceCube’s public alert catalogue, at its best-fit direction. Bigger for more energy (54 TeV to 7 PeV); warmer and brighter the likelier it came from space. Eight events flagged as cosmic-ray showers are left out.</p><p class="fx-cite"><a href="https://doi.org/10.7910/DVN/SCRUCD" rel="noopener">IceCat-1</a>, 2011 to 2023 · IceCube Collaboration, ApJS 269, 25</p></li>
+                <li><h4>The stars</h4><p>Every star to magnitude 5, sized by brightness and coloured by its colour index. Point at the brightest for their names.</p><p class="fx-cite"><a href="https://cdsarc.cds.unistra.fr/viz-bin/cat/V/137D" rel="noopener">XHIP</a>, the extended Hipparcos catalogue · Anderson &amp; Francis 2012</p></li>
+                <li><h4>The Milky Way</h4><p>The outline of our galaxy’s glow across the sky, in five steps of brightness.</p><p class="fx-cite"><a href="http://www.skymap.com/milkyway_cat.htm" rel="noopener">Milky Way Outline Catalog</a> · J. R. Vieira</p></li>
+                <li><h4>The constellations</h4><p>The figures joining the stars, as the International Astronomical Union draws them.</p><p class="fx-cite"><a href="https://www.iau.org/public/themes/constellations/" rel="noopener">IAU</a></p></li>
+              </ul>
+              <p class="fx-credit">The stars, Milky Way and constellations as packaged by
+                <a href="https://github.com/ofrohn/d3-celestial" rel="noopener">d3-celestial</a>
+                (<a href="assets/data/LICENSE-d3-celestial.txt">BSD licence</a>).</p>
+            </div>
+          </details>
+        </div>
+      
       </div>
     </section>
   </main>
