@@ -1,0 +1,62 @@
+/* Page shell for /telescopes/: matches annabelle-grimes.com; the figures' own styles are in figures.css.
+   The figures are drawn for a dark background, so this page is always dark. */
+:root {
+  --abyss: #030b17;
+  --ink: #e8f1f8;
+  --ink-muted: #9db3c6;
+  --line: rgba(157, 179, 198, 0.18);
+  --cherenkov: #5cc8ee;
+  --cherenkov-glow: rgba(92, 200, 238, 0.35);
+  --tint: 92, 200, 238;
+  --c: var(--ink-muted);
+  --up: #ffc371;
+  --low: #7ee8e0;
+  --radius: 14px;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Newsreader", Georgia, serif;
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  margin: 0; background: #070f1c; color: var(--ink);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+a { color: var(--cherenkov); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { color: #8ad8f3; }
+:focus-visible { outline: 2px solid var(--cherenkov); outline-offset: 3px; border-radius: 6px; }
+.skip { position: absolute; left: -999px; top: 8px; z-index: 100; background: #121c2e; padding: 8px 14px; border-radius: 8px; }
+.skip:focus { left: 16px; }
+.container { width: 100%; max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+@media (max-width: 600px) { .container { padding: 0 16px; } }
+
+.bar { position: sticky; top: 0; z-index: 40; background: rgba(7, 15, 28, .86); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+.bar__inner { max-width: 1160px; margin: 0 auto; padding: 0 24px; height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.bar__home { font-family: var(--font-display); font-size: 1.15rem; color: var(--ink); text-decoration: none; }
+.bar__back { font-size: .9rem; color: var(--ink-muted); text-decoration: none; }
+.bar__back:hover { color: var(--ink); }
+@media (max-width: 600px) { .bar__inner { padding: 0 16px; } }
+
+.intro { padding: 64px 0 24px; background: radial-gradient(110% 120% at 75% 0%, #0f3a63 0%, #071c36 50%, #070f1c 100%); }
+.eyebrow { margin: 0 0 12px; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; color: var(--cherenkov); }
+.intro h1 { margin: 0 0 18px; font-family: var(--font-display); font-weight: 400; font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.08; letter-spacing: -.01em; }
+.lede { max-width: 46rem; margin: 0 0 12px; font-size: 1.08rem; color: #c6d4e6; }
+.note { display: inline-block; margin: 4px 0 0; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: .82rem; color: var(--ink-muted); }
+
+.page-body { padding: 24px 0 72px; }
+.prose h2 { margin: 48px 0 14px; font-family: var(--font-display); font-weight: 500; font-size: clamp(1.5rem, 2.6vw, 2rem); line-height: 1.2; }
+.prose > h2:first-child { margin-top: 16px; }
+.prose h4 { font-weight: 600; }
+.prose p { max-width: 46rem; margin: 0 0 14px; color: #c6d4e6; }
+.prose ul, .prose ol { padding-left: 20px; }
+.prose figure { margin: 28px 0; }
+.prose .sky-globe { margin-top: 24px; }
+
+.foot { border-top: 1px solid var(--line); padding: 24px 0 32px; font-size: .82rem; color: var(--ink-muted); }
+.foot__inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
